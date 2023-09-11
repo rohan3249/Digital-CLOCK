@@ -1,0 +1,174 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-transform: capitalize;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'poppins', sans-serif;
+}
+
+body {
+    background-color: rgb(46, 45, 45);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.date-time {
+    padding: 30px;
+    background-color: black;
+    border-radius: 15px;
+    border: 2px solid #fff;
+}
+
+.date-time:hover {
+    background-color: #2e94e3;
+    box-shadow: 5px 5px 30px #2e94e3;
+}
+
+/* date*/
+.date {
+    color: #fff;
+    font-weight: 500;
+    font-size: 30px;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+#dayname {
+    background-color: rgb(66, 66, 63);
+    padding: 10px;
+    border-radius: 15px;
+}
+
+#monthname {
+    background-color: green;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+#dt {
+    background-color: rgb(173, 173, 24);
+    padding: 10px;
+    border-radius: 15px;
+}
+
+#yr {
+    background-color: rgb(10, 10, 158);
+    padding: 10px;
+    border-radius: 15px;
+}
+
+/* timetravel */
+
+.timatable {
+    color: #fff;
+    font-size: 75px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
+#hr {
+    background-color: red;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+#min {
+    background-color: green;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+#sec {
+    background-color: rgb(173, 173, 24);
+    padding: 10px;
+    border-radius: 15px;
+}
+
+#pr {
+    background-color: red;
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 35px;
+    margin-left: 10px;
+}
+
+@media(min-width:300px) and (max-width:650px) {
+    .date-time {
+        padding: 30px 0px;
+        width: 90%;
+    }
+
+    .timatable {
+        color: #fff;
+        font-size: 30px;
+        font-weight: 500;
+        display: flex;
+        justify-content: center;
+        gap: 2px;
+    }
+
+    .date {
+        color: #fff;
+        font-weight: 500;
+        font-size: 11px;
+        margin-bottom: 5px;
+        letter-spacing: 2px;
+        padding: 20px;
+        border-radius: 15px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    #pr {
+        font-size: 15px;
+        margin-left: 5px;
+    }
+}
+@media(max-width:299px){
+    .date-time {
+        padding: 30px 0px;
+        width: 90%;
+    }
+
+    .timatable {
+        color: #fff;
+        font-size: 15px;
+        font-weight: 500;
+        display: flex;
+        justify-content: center;
+        gap: 2px;
+    }
+
+    .date {
+        color: #fff;
+        font-weight: 500;
+        font-size: 6px;
+        margin-bottom: 5px;
+        letter-spacing: 2px;
+        padding: 20px;
+        border-radius: 15px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #pr {
+        font-size: 15px;
+        margin-left: 5px;
+    }
+}
